@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 15px 30px;
+            font-size: 20px;
+            padding: 20px;
+        }
+        .container{
+            background-color: #ccc;
+            padding: 10px 20px 15px;
+            border: 3px solid lightskyblue;
+            border-radius: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 15px;
+            border: 3px solid lightpink;
+            border-radius: 5px;
+            margin: 8px;
+        }
+        .heading{
+            text-align: center;
+            text-decoration: solid;
+
+        }
+         button[type="submit"]{
+            background-color: rgb(72,111,145);
+            color: beige;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+
+
+    }
+    button[type="submit"]:hover {
+        background-color: gold;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="https://docs.google.com" method="get">
+            <header class="heading">
+                <h1>contact forms</h1>
+                <h3>please fill all the text in the field</h3>
+            </header>
+            <p>
+                your first name:
+                <input type="text" name=" name" placeholder="your first name">
+            </p>
+            <p>
+                your last name:
+                <input type="text" name=" name" placeholder="your last name">
+
+            </p>
+            <p>
+                your email:
+                <input type="email" name=" emil" placeholder="enter your gmail">
+
+            </p>
+            <p>
+                <legend>message:</legend>
+                <textarea name="message" id="" cols="120" rows="10" require placeholder="your valueable message"></textarea>
+
+            </p>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
